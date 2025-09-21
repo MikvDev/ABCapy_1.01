@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-title);
+}
+:root {
+    --font-title: 'Poppins';
+    --blue: #93CCF7;
+    --blue2: #42ADE2;
+    --gray: #76848C;
+}
+main{
+    width: 100%;
+    overflow: hidden;
+    
+}
+#menu-top {
+    display: flex;
+    width: 80%;
+    padding: 20px;
+}
+
+#container-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+#history {
+    padding: 15px;
+    border: 2px solid var(--blue);
+    max-width: 90%;
+    border-radius: 12px;
+    min-width: 200px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 12px 4px rgb(0,0, 0,0.5);
+    transition: 0.3s ease-in-out;
+
+}
+#history:hover {
+transform:scale(0.9);
+}
+#history h1 {
+    font-size: 28px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+#history img {
+    width: 50%;
+    max-width: 93px;
+}
+#games-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 60px;
+    transition: 0.5s ease-in-out;
+}
+
+#games-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    max-width: 80%;
+    gap: 30px;
+    
+   
+}
+.game {
+    font-size: 15px;
+    color: var(--blue);
+    transition: 0.4s ease-in-out;
+
+}
+.game:hover {
+    transform: scale(0.9);
+}
+.game img {
+    width: 80%;
+}
+
+.game span {
+    color: var(--blue2);
+}
+
+#nav-footer {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    
+}
+
+ul {
+    list-style: none;
+}
+#navagation-bar {
+    display: flex;
+
+
+}
+.options {
+ padding: 20px;
+ padding-top: 13px;
+  transition: background-color 0.2s ease-in-out;
+  
+  flex-direction: column;
+
+    
+}
+.options img{
+ width: 24px;
+ 
+}
+.options p {
+    color: var(--gray);
+}
+.options:active {
+    background-color: #c7c29860;
+    transform: scale(0.95);
+    
+}
+.options {
+    height: 67px;
+}
+.bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(27, 148, 247, 0.7);
+  border-radius: 50%;
+  animation: rise 1.5s forwards;
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100px) scale(0.5);
+    opacity: 0;
+  }
+}
