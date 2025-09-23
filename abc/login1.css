@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#login-container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    text-align: center;
+}
+#login-container img {
+    max-width: 70%;
+}
+
+#btns-login {
+    display:flex ;
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+
+}
+
+#btns-login button {
+    
+
+    width: 50%;
+}
