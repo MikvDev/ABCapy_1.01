@@ -106,9 +106,17 @@ ul {
     list-style: none;
 }
 #navagation-bar {
+     position: fixed; 
+    bottom: 0;       
+    width: 100%;     
+    margin-bottom: 10px;
+    background-color: white; 
+    border-radius: 10px;
+   
     display: flex;
-
-
+    justify-content: center;
+    align-items: end;
+    text-align: center;
 }
 .options {
  padding: 20px;
@@ -127,12 +135,13 @@ ul {
     color: var(--gray);
 }
 .options:active {
-    background-color: #c7c29860;
+    background-color: #f5d0d060;
     transform: scale(0.95);
     
 }
 .options {
     height: 67px;
+    border-radius: 10px;
 }
 .bubble {
   position: absolute;
